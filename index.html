@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>S K</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top p-4">
+  <div class="container">
+    <a class="navbar-brand fw-light letter-spacing" href="#">S K ARTS</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-4">
+        <li class="nav-item"><a class="nav-link" href="#">Paintings</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Exhibitions</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Available Artworks</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./images/img1home.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/img2home.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/img3home.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/img4home.jpeg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- CONTENT SECTION -->
+<section class="container content-section">
+  <div class="row align-items-center">
+    
+    <div class="col-md-6 mb-4">
+      <h6 class="section-title">FRAGILITY AND RESILIENCE IN ABSTRACTION</h6>
+      <p class="text-muted mt-3">
+        Helen Booth’s paintings explore the meditative intersections of time,
+        nature, and human connection. Inspired by winter light and timeless
+        textures, each piece invites quiet contemplation.
+      </p>
+    </div>
+
+    <div class="col-md-6">
+      <h5 class="letter-spacing">THE SPECIAL EDITION SERIES</h5>
+      <ul class="custom-list mt-3">
+        <li>Original oil painting on canvas</li>
+        <li>Signed limited edition drypoint</li>
+        <li>Certificate of authenticity</li>
+        <li>Full colour catalogue</li>
+        <li>Optional framing available</li>
+      </ul>
+
+      <button class="btn btn-outline-dark mt-3">View Collection</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- MAILING LIST -->
+<section class="newsletter text-center">
+  <h6 class="letter-spacing">JOIN MY MAILING LIST</h6>
+  <p class="text-muted small mt-2">
+    Receive reflections, exhibition updates, and early access to new works.
+  </p>
+
+  <form class="d-flex justify-content-center mt-3" onsubmit="subscribe(event)">
+    <input type="email" class="form-control w-25 me-2" placeholder="Your email" required>
+    <button class="btn btn-dark">Subscribe</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer text-center">
+  <p class="small mb-1">© Shivakumara N</p>
+  <p class="small text-muted"></p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  padding-top: 80px;
+}
+
+.letter-spacing {
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.hero-section img {
+  max-height: 90vh;
+  object-fit: cover;
+}
+
+.content-section {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #666;
+}
+
+.custom-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.custom-list li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.custom-list li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+}
+
+.newsletter {
+  padding: 80px 20px;
+  background-color: #fafafa;
+}
+
+.footer {
+  padding: 30px 0;
+  border-top: 1px solid #eee;
+}
+
+/* Carousel container height */
+#heroCarousel {
+  height: 80vh;              /* Professional hero size */
+}
+
+/* Make carousel items match height */
+#heroCarousel .carousel-item {
+  height: 80vh;
+}
+
+/* Image handling */
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;         /* CROPS nicely */
+  object-position: center;   /* Center focus */
+}
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  padding: 20px;
+  border-radius: 5px;
+}
+
