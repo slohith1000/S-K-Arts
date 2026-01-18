@@ -1,12 +1,11 @@
 :root {
-    --bg-main: #FAFAF8;
-    --bg-card: #FFFFFF;
-    --text-primary: #222222;
-    --text-secondary: #6B6B6B;
-    --border-light: #E6E6E6;
-    --accent: #3A5BA0;
-    --accent-hover: #2E4B85;
-    --highlight: #C9A24D;
+    --white: #ffffff;
+  --charcoal: #1c1c1c;
+  --muted-grey: #6b6b6b;
+  --light-grey: #f6f6f6;
+  --border-grey: #eaeaea;
+  --gold: #c9a24d;
+  --gold-hover: #b8923f;
 }
 
 
@@ -16,26 +15,58 @@
 
 body {
     font-family: "Segoe UI", Arial, sans-serif;
-    padding-top: 80px;
-    background-color: #ffffff;
+    background-color: var(--white);
+    color: var(--charcoal);
+    padding-top: 96px; /* Matches navbar height */
 }
+
+p {
+  color: var(--muted-grey);
+  line-height: 1.75;
+  font-size: 0.95rem;
+}
+
 
 .letter-spacing {
     letter-spacing: 2px;
     font-weight: 300;
 }
 
-.section-title {
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #444;
-}
 
 .footer {
     padding: 30px 0;
     border-top: 1px solid #eee;
     background-color: #fafafa;
 }
+
+
+
+.navbar {
+  height: 96px;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border-grey);
+}
+
+.navbar-brand {
+  font-size: 0.95rem;
+  letter-spacing: 4px;
+  font-weight: 500;
+}
+
+.nav-link {
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--muted-grey);
+}
+
+
+.nav-link:hover {
+  color: var(--gold);
+} 
+
+
+
 
 /* Back button polish */
 .btn-outline-dark {
@@ -56,11 +87,7 @@ body {
     height: 80vh;
 }
 
-.home-hero img {
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
+
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -68,20 +95,39 @@ body {
 }
 
 .carousel-indicators button {
-    background-color: #000;
+    background-color: var(--gold);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
 }
 
+
+
+.hero-img {
+  height: 80vh;
+  object-fit: cover;
+}
+
+
 .artist-img {
-    max-height: 280px;
-    border-radius: 10px;
-    box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+    max-height: 300px;
+    border-radius: 14px;
+    box-shadow: 0px 12px 28px rgba(0,0,0,0.08);
 }
 
 .art-card {
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 18px;
-    box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
+    background: var(--white);
+    border-radius: 16px;
+    padding: 22px;
+    box-shadow: 0px 10px 28px rgba(0,0,0,0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+
+}
+
+.art-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 18px 40px rgba(0,0,0,0.1);
 }
 
 /* =========================================================
@@ -102,10 +148,23 @@ body {
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+/* .painting-card {
+  background: var(--white);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0px 12px 30px rgba(0,0,0,0.07);
+} */
+
 .painting-card:hover {
     transform: translateY(-5px);
     box-shadow: 0px 14px 30px rgba(0,0,0,0.12);
 }
+
+/* .painting-img {
+  background: var(--light-grey);
+  border-radius: 12px;
+  padding: 16px;
+} */
 
 .painting-img {
     width: 100%;
@@ -114,7 +173,7 @@ body {
     background: #f6f6f6;
     border-radius: 10px;
     padding: 12px;
-}
+} 
 
 .painting-info {
     text-align: center;
@@ -167,10 +226,11 @@ body {
    CONTACT PAGE (SCOPED ONLY)
 ========================================================= */
 
-.contact-page {
+/* .contact-page {
     background: linear-gradient(120deg, #f4f6f9, #eef2f7);
     font-family: 'Poppins', sans-serif;
-}
+} */
+
 
 .contact-card {
     max-width: 760px;
@@ -224,10 +284,10 @@ body {
 }
 
 
-body {
+/* body {
     background-color: var(--bg-main);
     color: var(--text-primary);
-}
+} */
 
 .footer {
     background-color: var(--bg-main);
@@ -251,4 +311,35 @@ body {
 
 .btn-custom:hover {
     background: var(--accent-hover);
+}
+
+.section-title {
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+/* footer */
+
+
+.footer {
+  background-color: var(--white);
+  border-top: 1px solid var(--border-grey);
+  color: var(--muted-grey);
+  font-size: 0.85rem;
+}
+
+.btn-gold {
+  background-color: var(--gold);
+  color: white;
+  padding: 10px 28px;
+  border-radius: 24px;
+  font-size: 0.85rem;
+  border: none;
+}
+
+.btn-gold:hover {
+  background-color: var(--gold-hover);
 }
