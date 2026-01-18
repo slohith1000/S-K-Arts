@@ -1,4 +1,4 @@
-.painting-link {
+ .painting-link {
   text-decoration: none;
   color: inherit;
 }
@@ -26,3 +26,6 @@
   font-size: 0.85rem;
   color: var(--muted-grey);
 }
+
+
+
