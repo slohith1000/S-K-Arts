@@ -1,0 +1,22 @@
+.navbar {
+  height: 96px;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border-grey);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+
+.nav-link {
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--muted-grey);
+}
+
+.nav-link:hover {
+  color: var(--gold);
+}

@@ -1,0 +1,22 @@
+.hero-img {
+  height: 80vh;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.carousel-indicators button {
+  background-color: var(--gold);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.artist-img {
+  max-height: 300px;
+  border-radius: 14px;
+  box-shadow: 0px 12px 28px rgba(0,0,0,0.08);
+}
