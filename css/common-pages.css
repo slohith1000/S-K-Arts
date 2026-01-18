@@ -11,3 +11,13 @@
   font-size: 0.9rem;
   letter-spacing: 1px;
 }
+html {
+    scroll-behavior: smooth;
+}
+.painting-card:active {
+    transform: scale(0.98);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
