@@ -1,0 +1,42 @@
+:root {
+  --white: #ffffff;
+  --charcoal: #1c1c1c;
+  --muted-grey: #6b6b6b;
+  --light-grey: #f6f6f6;
+  --border-grey: #eaeaea;
+  --gold: #c9a24d;
+  --gold-hover: #b8923f;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: var(--white);
+  color: var(--charcoal);
+  padding-top: 96px; /* navbar height */
+}
+
+p {
+  color: var(--muted-grey);
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+.section-title {
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.letter-spacing {
+  letter-spacing: 2px;
+  font-weight: 300;
+}

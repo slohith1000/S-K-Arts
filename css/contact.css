@@ -1,0 +1,30 @@
+.contact-card {
+  max-width: 760px;
+  margin: auto;
+  padding: 40px;
+}
+
+.contact-info p {
+  margin: 6px 0;
+  font-size: 0.9rem;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #3a6df0;
+  font-weight: 500;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-page .form-control {
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.contact-page .form-control:focus {
+  border-color: #3a6df0;
+  box-shadow: none;
+}

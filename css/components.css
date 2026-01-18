@@ -1,0 +1,46 @@
+/* Cards */
+.art-card,
+.painting-card,
+.contact-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0px 10px 28px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.art-card:hover,
+.painting-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 18px 40px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--white);
+  border-top: 1px solid var(--border-grey);
+  color: var(--muted-grey);
+  font-size: 0.85rem;
+  padding: 30px 0;
+  text-align: center;
+}
+
+/* Buttons */
+.btn-outline-dark {
+  border-radius: 20px;
+  padding: 4px 14px;
+  font-size: 0.85rem;
+}
+
+.btn-gold {
+  background-color: var(--gold);
+  color: white;
+  padding: 10px 28px;
+  border-radius: 24px;
+  font-size: 0.85rem;
+  border: none;
+}
+
+.btn-gold:hover {
+  background-color: var(--gold-hover);
+}
