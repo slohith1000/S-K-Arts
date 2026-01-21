@@ -1,8 +1,11 @@
 /* ================= NAVBAR TYPOGRAPHY ================= */
 
 .navbar {
-  background: #f1f1f1;
+  background: #e6e6e6;
   border-bottom: 1px solid #eee;
+  padding-top: 17px;
+  padding-bottom: 17px;
+
 }
 
 
