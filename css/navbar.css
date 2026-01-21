@@ -69,3 +69,6 @@
     font-size: 0.85rem;
   }
 }
+.nav-link:hover {
+  color: #c9a961 !important;
+}
