@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Exhibitions | S K Arts</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Exhibitions | S K Arts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/navbar.css">
-<link rel="stylesheet" href="css/components.css">
-<link rel="stylesheet" href="css/common-pages.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/common-pages.css">
 </head>
+
 <body>
 
-<!-- ================= NAVBAR (Section 1) ================= -->
+<!-- ================= NAVBAR ================= -->
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
     <a class="navbar-brand letter-spacing" href="index.html">S K ARTS</a>
@@ -26,7 +29,7 @@
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto gap-lg-4">
         <li class="nav-item"><a class="nav-link" href="paintings.html">Paintings</a></li>
-        <li class="nav-item"><a class="nav-link" href="exhibitions.html">Exhibitions</a></li>
+        <li class="nav-item"><a class="nav-link active" href="exhibitions.html">Exhibitions</a></li>
         <li class="nav-item"><a class="nav-link" href="available.html">Available Artworks</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -35,54 +38,149 @@
   </div>
 </nav>
 
+<div style="height:15px;"></div>
 
-<div class="container mb-3">
-  <a href="index.html" class="btn btn-outline-dark btn-sm">
-    ← Back to Home
-  </a>
-</div>
-
-
-<!-- TITLE -->
-<section class="container text-center mb-5">
+<!-- ================= TITLE ================= -->
+<section class="container text-center mb-4 ">
   <h3 class="section-title">Exhibitions</h3>
-  <p class="text-muted">A record of exhibitions and showcases.</p>
+  <!-- <p class="text-muted">
+    A journey of artistic participation across cities and years.
+  </p> -->
 </section>
 
-<!-- EXHIBITION LIST -->
-<section class="container pb-5">
-  <div class="row g-4">
+<!-- ================= BENGALURU SECTION ================= -->
 
-    <div class="col-md-6">
-      <div class="painting-card p-3">
-        <div class="placeholder-img">IMAGE PLACEHOLDER</div>
-        <div class="mt-3">
-          <h6>Modern Art Showcase</h6>
-          <p class="small text-muted">Mysuru · 2023</p>
-          <p class="small">A curated exhibition featuring abstract and contemporary works.</p>
-        </div>
-      </div>
+<section class="container mb-4">
+
+  <h4 class="text-center mini-title">Bengaluru Exhibition (2019 – 2023)</h4>
+
+  <!-- ===== Row 1: Image Left, Text Right ===== -->
+  <div class="row align-items-center mb-5">
+
+    <!-- Image -->
+    <div class="col-md-6 mb-3 mb-md-0">
+      <img
+        src="images/exhibition1.jpeg"
+        alt="Chitra Santhe Bengaluru"
+        class="img-fluid rounded shadow"
+      >
     </div>
 
+    <!-- Text -->
     <div class="col-md-6">
-      <div class="painting-card p-3">
-        <div class="placeholder-img">IMAGE PLACEHOLDER</div>
-        <div class="mt-3">
-          <h6>Colors of Emotion</h6>
-          <p class="small text-muted">Bengaluru · 2022</p>
-          <p class="small">Exploration of emotion through expressive color palettes.</p>
-        </div>
-      </div>
+      <p>
+        Chitra Santhe is one of Bengaluru’s most prestigious open-air art festivals,
+        bringing together artists from across the country on a single vibrant platform.
+      </p>
+      <p>
+        The artist participated in Chitra Santhe over multiple years, showcasing original
+        artworks to a diverse and enthusiastic audience.
+      </p>
+      <p>
+        The event provided direct interaction with art lovers, collectors, and critics,
+        creating meaningful conversations around creativity and expression.
+      </p>
+      <p>
+        Each participation strengthened artistic confidence and public engagement,
+        making Chitra Santhe a significant part of the Bengaluru exhibition journey.
+      </p>
+      <p>
+        The experience contributed greatly to artistic exposure and recognition.
+      </p>
     </div>
 
   </div>
+
+  <!-- ===== Row 2: Text Left, Image Right ===== -->
+  <div class="row align-items-center">
+
+    <!-- Text -->
+    <div class="col-md-6 order-2 order-md-1">
+      <p>
+        Participating in exhibitions alongside fellow artists was a deeply enriching
+        experience for my father, both personally and professionally.
+      </p>
+      <p>
+        The Bengaluru exhibitions allowed him to observe evolving art trends while
+        staying rooted in his unique artistic voice.
+      </p>
+      <p>
+        Engaging with visitors and receiving feedback helped refine his approach
+        to composition, color, and emotional depth.
+      </p>
+      <p>
+        The continuous participation over five years reflected dedication, discipline,
+        and a strong commitment to artistic growth.
+      </p>
+      <p>
+        These experiences remain an important chapter in his artistic journey.
+      </p>
+    </div>
+
+    <!-- Image -->
+    <div class="col-md-6 order-1 order-md-2 mb-3 mb-md-0">
+      <img
+        src="images/exhibitions2.jpeg"
+        alt="Artist Experience Bengaluru"
+        class="img-fluid rounded shadow"
+      >
+    </div>
+
+  </div>
+
 </section>
+
+
+<!-- ================= MYSURU SECTION ================= -->
+<!-- ================= MYSURU SECTION ================= -->
+<section class="container pb-5 mt-5 mb-5">
+
+  <h4 class="text-center mini-title">Mysuru Exhibition (2024)</h4>
+
+  <div class="row align-items-center">
+
+    <!-- Image (Left) -->
+    <div class="col-md-6 mb-3">
+      <img
+        src="images/exhibitions3.jpeg"
+        alt="Mysuru Art Exhibition"
+        class="img-fluid rounded shadow"
+      >
+    </div>
+
+    <!-- Text (Right) -->
+    <div class="col-md-6">
+      <p>
+        The 2024 Mysuru art exhibition marked a significant milestone in the artist’s
+        exhibition journey, held in a city renowned for its rich cultural and artistic heritage.
+      </p>
+      <p>
+        The exhibition presented a thoughtfully curated collection of artworks that
+        reflected maturity in expression, refined techniques, and deeper emotional narratives.
+      </p>
+      <p>
+        For my father, exhibiting in Mysuru was a deeply meaningful experience, as the
+        audience showed genuine appreciation and thoughtful engagement with his work.
+      </p>
+      <p>
+        Interactions with visitors, fellow artists, and art enthusiasts provided valuable
+        feedback and encouragement, reinforcing his artistic vision.
+      </p>
+      <p>
+        This exhibition strengthened his confidence and remains an important chapter
+        in his continuing artistic journey.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
 
 <!-- ================= FOOTER ================= -->
 <footer class="site-footer">
 
   <div class="container">
-
     <div class="row align-items-center gy-4">
 
       <!-- Brand -->
@@ -120,11 +218,13 @@
     <div class="text-center footer-copy">
       © Shivakumara N · All Rights Reserved
     </div>
-
   </div>
 
 </footer>
 
-
 </body>
 </html>
+
+
+
+

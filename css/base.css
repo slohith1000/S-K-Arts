@@ -31,11 +31,20 @@ p {
 }
 
 .section-title {
-  font-size: 11px;
+  font-size: 25px;
   letter-spacing: 4px;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 12px;
+  margin-bottom: 8px;
+}
+
+.mini-title {
+  font-size: 22px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 65px;
+
 }
 
 .letter-spacing {
