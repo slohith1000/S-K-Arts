@@ -21,7 +21,7 @@
 
 <body class="contact-page">
 
-  <!-- ================= NAVBAR ================= -->
+  <!-- ================= NAVBAR ================= -->    
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
       <a class="navbar-brand letter-spacing" href="index.html">S K ARTS</a>
@@ -42,6 +42,8 @@
     </div>
   </nav>
 
+
+
   <!-- Spacer -->
   <div style="height:90px;"></div>
 
@@ -51,6 +53,7 @@
       ← Back to Home
     </a>
   </div>
+
 
   <!-- ================= CONTACT CARD ================= -->
   <div class="container pb-5">
@@ -95,14 +98,18 @@
         <div class="form-wrapper">
           <h6 class="section-title mb-4">ENQUIRY FORM</h6>
 
-          <form class="contact-form">
+          <form 
+            class="contact-form"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSdco5HTK9py4v5Zy7R78YAf11HKij6SPCpf3JnjFceTg_KBbQ/formResponse"
+            method="POST" 
+            target="_blank">
 
             <div class="row">
 
               <!-- Name -->
               <div class="col-md-6 mb-4">
                 <div class="floating-input">
-                  <input type="text" required>
+                  <input type="text" name="entry.1511295921" required>
                   <label>Your Name</label>
                 </div>
               </div>
@@ -110,7 +117,7 @@
               <!-- Phone -->
               <div class="col-md-6 mb-4">
                 <div class="floating-input">
-                  <input type="tel" required>
+                  <input type="tel" name="entry.74545070" required>
                   <label>Phone Number</label>
                 </div>
               </div>
@@ -120,7 +127,7 @@
             <!-- Email -->
             <div class="mb-4">
               <div class="floating-input">
-                <input type="email" required>
+                <input type="email" name="entry.1961151001" required>
                 <label>Email Address</label>
               </div>
             </div>
@@ -128,7 +135,7 @@
             <!-- Message -->
             <div class="mb-5">
               <div class="floating-input textarea">
-                <textarea rows="4" required></textarea>
+                <textarea rows="4" name="entry.474040100" required></textarea>
                 <label>Your Message</label>
               </div>
             </div>
@@ -140,10 +147,8 @@
             </div>
 
           </form>
+          <iframe name="hidden_iframe" style="display:none;"></iframe>
         </div>
-
-
-        </form>
       </div>
 
     </div>
