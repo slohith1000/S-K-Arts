@@ -35,4 +35,47 @@ img {
   color: #c9a961;   /* gold accent */
   margin-bottom: 27px;
 }
+/* ================= ARTIST IMAGE ================= */
+
+.artist-photo {
+  max-width: 420px;
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 14px 35px rgba(0,0,0,0.12);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.artist-photo:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 22px 50px rgba(0,0,0,0.18);
+}
+
+/* Mobile spacing */
+@media (max-width: 768px) {
+  .artist-photo {
+    margin-top: 30px;
+  }
+}
+.about-text p {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.8;
+  letter-spacing: 0.25px;
+}
+/* Professional paragraph formatting */
+.container p {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.75;
+  letter-spacing: 0.2px;
+  max-width: 95%;
+}
+
+/* Better readability on mobile */
+@media (max-width: 768px) {
+  .container p {
+    text-align: left;
+  }
+}
 
