@@ -21,3 +21,18 @@ img {
     max-width: 100%;
     height: auto;
 }
+.exhibitions-page p{
+    color: #323131;                 /* Rich dark for readability */
+  font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+}
+.content-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #c9a961;   /* gold accent */
+  margin-bottom: 27px;
+}
+

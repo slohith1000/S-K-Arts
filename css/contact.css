@@ -1,17 +1,44 @@
-.contact-card {
-  max-width: 760px;
-  margin: auto;
-  padding: 40px;
+/* ================= CONTACT PAGE ================= */
+
+.contact-page {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #f7f9fc, #eef2f6);
 }
 
+/* Card */
+.contact-card {
+  max-width: 820px;
+  margin: auto;
+  padding: 60px 55px;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+}
+
+/* Titles */
+.page-title {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #777;
+}
+
+/* Contact Info */
 .contact-info p {
-  margin: 6px 0;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  color: #333;
+  margin: 8px 0;
+  line-height: 1.6;
 }
 
 .contact-info a {
+  color: #c9a961;
   text-decoration: none;
-  color: #3a6df0;
   font-weight: 500;
 }
 
@@ -19,12 +46,85 @@
   text-decoration: underline;
 }
 
-.contact-page .form-control {
-  border-radius: 8px;
-  font-size: 0.9rem;
+/* Divider spacing */
+.form-wrapper {
+  margin-top: 40px;
 }
 
-.contact-page .form-control:focus {
-  border-color: #3a6df0;
-  box-shadow: none;
+/* ================= FLOATING INPUTS ================= */
+
+.floating-input {
+  position: relative;
+}
+
+.floating-input input,
+.floating-input textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #e2e2e2;
+  padding: 14px 6px 10px;
+  font-size: 0.95rem;
+  outline: none;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.floating-input textarea {
+  resize: none;
+}
+
+/* Label */
+.floating-input label {
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 0.85rem;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+/* Floating animation */
+.floating-input input:focus + label,
+.floating-input input:valid + label,
+.floating-input textarea:focus + label,
+.floating-input textarea:valid + label {
+  top: -8px;
+  font-size: 0.7rem;
+  color: #c9a961;
+  background: #fff;
+  padding: 0 6px;
+}
+
+/* Focus line */
+.floating-input input:focus,
+.floating-input textarea:focus {
+  border-bottom-color: #c9a961;
+}
+
+/* ================= BUTTON ================= */
+
+.btn-custom {
+  background: linear-gradient(135deg, #c9a961, #b9964f);
+  border: none;
+  color: #fff;
+  padding: 12px 52px;
+  border-radius: 40px;
+  font-size: 0.9rem;
+  letter-spacing: 1.2px;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(201,169,97,0.4);
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 40px 28px;
+  }
 }
