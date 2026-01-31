@@ -1,0 +1,107 @@
+/* ================= PAGE HEADER ================= */
+
+.section-title {
+font-size: 25px;
+letter-spacing: 4px;
+text-transform: uppercase;
+color: var(--gold);
+margin-bottom: 8px;
+}
+
+.mini-title {
+font-size: 22px;
+letter-spacing: 2.5px;
+text-transform: uppercase;
+color: black;
+margin-bottom: 65px;
+}
+
+/* ================= GALLERY GRID ================= */
+
+.masonry-gallery {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 30px;
+padding: 0 0 80px;
+max-width: 1400px;
+margin: 0 auto;
+align-items: start;
+background-color: transparent;
+}
+
+@media (max-width: 768px) {
+.masonry-gallery {
+grid-template-columns: 1fr;
+gap: 40px;
+}
+}
+
+/* ================= GALLERY ITEM ================= */
+
+.gallery-item {
+display: block;
+text-decoration: none;
+color: inherit;
+transition: transform 0.3s ease;
+background-color: transparent;
+}
+
+.gallery-item:hover {
+transform: translateY(-8px);
+}
+
+.gallery-item:hover .caption h6 {
+color: #c9a961;
+}
+
+/* Image behavior */
+.gallery-item img {
+width: 100%;
+height: auto;
+display: block;
+max-height: 75vh;
+object-fit: contain;
+background-color: var(--white);
+box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+transition: box-shadow 0.3s ease;
+}
+
+.gallery-item:hover img {
+box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+}
+
+/* ================= CAPTION ================= */
+
+.caption {
+padding: 15px 5px 10px;
+background: transparent;
+}
+
+.caption h6 {
+font-size: 1.1rem;
+font-weight: 500;
+margin-bottom: 8px;
+color: #2c2c2c;
+transition: color 0.3s ease;
+}
+
+.caption p {
+font-size: 0.9rem;
+color: #888;
+margin-bottom: 10px;
+}
+
+/* ================= STATUS ================= */
+
+.status {
+display: inline-block;
+padding: 4px 12px;
+font-size: 0.85rem;
+border-radius: 3px;
+font-weight: 500;
+}
+
+.status.available {
+background-color: #e8f5e9;
+color: #2e7d32;
+}

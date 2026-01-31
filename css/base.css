@@ -6,6 +6,8 @@
   --border-grey: #eaeaea;
   --gold: #c9a24d;
   --gold-hover: #b8923f;
+  --gold-accent: #b8923f;
+
 }
 
 /* RESET */
@@ -17,9 +19,10 @@
 
 body {
   font-family: "Segoe UI", Arial, sans-serif;
-  background-color: var(--white);
+  /* background-color: var(--white); */
+  background-color: #fdfdfd;
   color: var(--charcoal);
-  padding-top: 96px; /* navbar height */
+  padding-top: 72px; /* navbar height */
 }
 
 p {
@@ -29,11 +32,20 @@ p {
 }
 
 .section-title {
-  font-size: 11px;
+  font-size: 25px;
   letter-spacing: 4px;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 12px;
+  margin-bottom: 8px;
+}
+
+.mini-title {
+  font-size: 22px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 65px;
+
 }
 
 .letter-spacing {
@@ -43,7 +55,7 @@ p {
 /* ================= FOOTER ================= */
 
 .site-footer {
-  background: #f1f1f1;
+  background: #e6e6e6;
   padding: 60px 0 30px;
   margin-top: 80px;
   border-top: 1px solid #eee;
@@ -122,4 +134,12 @@ body {
   font-family: 'Inter', sans-serif;
   color: #222;
   background-color: #fff;
+}
+.section-title{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #c9a24d;
+  margin-top: 20px;
 }
